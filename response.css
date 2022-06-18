@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    background-image: url(bg-intro-desktop.png);
+    background-color: #ff7a7a;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.cont {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container 1 */
+.cont1 {
+    width: 33.75rem;
+    height: 29.688rem;
+    margin-right: 2.5rem;
+    margin-left: 3rem;
+}
+
+.cont1 h1 {
+    font-size: 3.1rem;
+    line-height: 3.4rem;
+    margin-top: 6.4rem;
+    margin-right: 2rem;
+}
+
+.cont1 p {
+    height: 700;
+    margin-bottom: 10rem;
+    margin-right: 2.5rem;
+    margin-top: 5%;
+}
+
+/* container 2 */
+.cont2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    width: 33.75rem;
+    height: 29.688rem;
+    margin-top: 7%;
+    margin-bottom: 20%;
+    margin-right: 3rem;
+}
+
+.cont2 a {
+    text-decoration: none;
+    color: #ff7a7a;
+}
+
+.cont-trial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.95rem;
+    background-color: #6055a5;
+    color: white;
+    width: 33.438rem;
+    height: 3.75rem;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+    padding-top: 3rem;
+    margin-top: 7.5rem;
+    margin-bottom: 1.563rem;
+    box-shadow: 0 0.625rem 0 -0.125rem rgba(0, 0, 0, 0.2);
+}
+
+.cont-trial p {
+    margin-bottom: 2.5rem;
+}
+
+.cont-signup {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 1.25rem;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+    box-shadow: 0px 10px 0px -2px rgba(0, 0, 0, 0.2);
+    width: 33.75rem;
+}
+
+.cont-signup p {
+    font-size: 0.65rem;
+    color: #b9b6d3;
+    padding-bottom: 2.5rem;
+    font-size: 0.5rem;
+    color: black;
+}
+
+.cont2 input {
+    font-size: 0.938rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border: 1px solid rgba(185, 182, 211, 0.349);
+    border-radius: 0.313rem 0.313rem 0.313rem 0.313rem;
+    width: 28.75rem;
+    height: 3.375rem;
+}
+
+.cont2 button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #38cc8c;
+    margin: 1.25rem 0 1rem 1rem;
+    width: 28.75rem;
+    height: 3.375rem;
+    border: 0.1px ridge #b9b6d3;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 1px 1px -8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+form input:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.cont2 button:hover:hover {
+    opacity: 0.6;
+}
+
+/* Icons */
+form div img {
+    margin: 35px 0px 10px -40px;
+    opacity: 0;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url(bg-intro-mobile.png);
+        width: 23.438rem;
+    }
+
+    .cont {
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .cont1 {
+        width: 23.438rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cont1 h1 {
+        margin-top: -80px;
+        font-size: 1.8rem;
+        line-height: 2.375rem;
+    }
+
+    .cont1 p {
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin-left: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .cont-trial {
+        width: 20.313rem;
+        height: 5.625rem;
+        margin: -160px 3rem 3rem 1.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .cont-signup {
+        width: 20.313rem;
+        height: 27.813rem;
+        padding-right: 0.9rem;
+        padding-top: 0;
+        margin-top: -25px;
+    }
+
+    .cont-signup input {
+        width: 17.5em;
+        height: 3.438rem;
+        margin-top: 1.5rem;
+    }
+
+    .cont-signup p {
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .cont2 button {
+        width: 17.188rem;
+        height: 3.438rem;
+        margin-top: 0.938rem;
+    }
+
+    .cont2 {
+        width: 23.438rem;
+        margin-right: 0px;
+    }
+
+    .cont1 h1 {
+        margin-right: 0;
+        width: 23.438rem;
+    }
+
+    .cont-trial {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}
